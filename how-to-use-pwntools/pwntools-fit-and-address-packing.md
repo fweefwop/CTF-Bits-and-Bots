@@ -4,6 +4,7 @@
 Used for positioning your code at a specific location. For ie. BoF is found at 126 bytes, and after that you need to jump to address ```0xdeadbeaf```:
    
 ```
+>>> from pwn import *
 >>> fit({126:"oxdeadbeaf"})
 b'aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaa
 bbaabcaabdaabeaabfaabga0xdeadbeaf'

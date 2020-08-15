@@ -23,10 +23,9 @@ These are bit dependent. To pack/unpack an address into a string, ie. 64bits:
 Pack:
 >>> p64(0xdeadbeaf)
 b'\xaf\xbe\xad\xde\x00\x00\x00\x00'
-
+``` 
+```   
 Unpack:
-
-```    
 >>> u64(b'\xaf\xbe\xad\xde\x00\x00\x00\x00')
 3735928495
 >>> hex(u64(b'\xaf\xbe\xad\xde\x00\x00\x00\x00'))

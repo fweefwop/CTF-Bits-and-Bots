@@ -72,12 +72,12 @@ Decoding LSB steganography is exactly the same as encoding, but in reverse. For 
 gone through each byte, convert all the LSBs you grabbed into text or a file.
 
 ### QRCodes?
-Install ```zbarimg```     
+Install [zbarimg](http://manpages.ubuntu.com/manpages/focal/en/man1/zbarimg.1.html)     
 ```    
 apt-get install zbar-tools
 ```     
 Usage      
-Read a QR-Code
+Read a [QR-Code](https://bahamas10.github.io/binary-to-qrcode/)
 ```      
 zbarimg <imagefile>
 ```      

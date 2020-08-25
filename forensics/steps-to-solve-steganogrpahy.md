@@ -18,22 +18,22 @@ the password ) that can be a passphrase to steghide. Sometimes, you may have to 
 8. [zsteg](https://github.com/zed-0xff/zsteg): detect stegano-hidden data in PNG & BMP
 9. [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html): pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
 the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.
-10. ```Mediaextract``` : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.
+10. [Mediaextract](https://github.com/panzi/mediaextract) : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.
 11. Comparing two similar images to find the difference
 ```        
     compare hint.png stego100.png -compose src diff.png
 ```
-12. ```Image Arithmetic``` We can do image addition, subtraction, multiplication, division, blending, logical AND/NAND, logical OR/NOR, logical XOR/XNOR, Invert/ Logical NOT, Bitshift Operators.
-13. We can use ```gmic``` to perform XOR of the images.
+12. [Image Arithmetic](http://homepages.inf.ed.ac.uk/rbf/HIPR2/arthops.htm) We can do image addition, subtraction, multiplication, division, blending, logical AND/NAND, logical OR/NOR, logical XOR/XNOR, Invert/ Logical NOT, Bitshift Operators.
+13. We can use [gmic](http://gmic.eu/) to perform XOR of the images.
 ```
   gmic a.png b.png -blend xor -o result.png
 ```    
-14. JPEG : ```Jstego``` : program aims at providing a java solution to hide secret information(such as secret file) to JPEG images. Hiding algorithm contains 
+14. JPEG : [Jstego](https://sourceforge.net/projects/jstego/) : program aims at providing a java solution to hide secret information(such as secret file) to JPEG images. Hiding algorithm contains 
 Jsteg and F5. The main(probably the toughest) stuff is encoding and decoding JFIF files.
-15. JPEG : ```Jsteg``` : jsteg is a package for hiding data inside jpeg files, a technique known as steganography. This is accomplished by copying each bit 
+15. JPEG : [Jsteg](https://github.com/lukechampine/jsteg) : jsteg is a package for hiding data inside jpeg files, a technique known as steganography. This is accomplished by copying each bit 
 of the data into the least-significant bits of the image. The amount of data that can be hidden depends on the filesize of the jpeg; it takes about 10-14 bytes 
 of jpeg to store each byte of the hidden data.
-16. Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image
+16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)
 
 ### LSB Stegonagraphy
 File are made of bytes. Each byte is composed of eight bits.

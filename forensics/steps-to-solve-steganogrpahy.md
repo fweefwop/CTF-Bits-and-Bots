@@ -13,7 +13,7 @@ chmod +x steg-tools-install.sh
 **Install:** ```  pip install stegoveritas```      
 **Usage:** ``` stegoveritas [file name]``` 
 
-If you are looking for hidden flag in an image first start with ``` stegovertitas```. If nothing is found, run the following steps:
+If you are looking for hidden flag in an image first start with ``` stegovertitas``` or run the following steps:
 1. ```file, exiftool``` command, and make sure the extension is correctly displayed.
 2. ```strings```      
   2.1 Sometimes, it is better to see lines only greater than x length.

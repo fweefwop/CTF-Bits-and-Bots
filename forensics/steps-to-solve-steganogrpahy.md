@@ -15,8 +15,8 @@ with 7z x . If somehow, you get a passphrase for the image, then you might have 
 6. ```stegosuite```
 7. ```steghide``` : If there’s any text present in the Image file or the filename of the image or any link ( maybe to youtube video; video name can be 
 the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.
-8. ```[zsteg][1]``` : detect stegano-hidden data in PNG & BMP
-9. ```[pngcheck][2]``` : pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
+8. ```[zsteg](https://github.com/zed-0xff/zsteg)``` : detect stegano-hidden data in PNG & BMP
+9. ```[pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)``` : pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
 the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.
 10. ```Mediaextract``` : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.
 11. Comparing two similar images to find the difference
@@ -89,5 +89,3 @@ Got a QR-Code in Binary 0101?, convert it into QR-Code by QR Code Generator
   1.2 Morse code possible? As all the morse data appears to be below 100 Hz, we can use a low pass filter (effects menu, cutoff 100 Hz) to ease transcription
   1.3 Golang mp3 Frame Parser
 
-[1]:https://github.com/zed-0xff/zsteg
-[2]:http://www.libpng.org/pub/png/apps/pngcheck.html

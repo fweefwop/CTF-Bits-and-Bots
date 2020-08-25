@@ -84,7 +84,7 @@ zbarimg <imagefile>
 Got a QR-Code in Binary 0101?, convert it into QR-Code by QR Code Generator
 
 ### Sound Files
-1. Open the file in Audacity or Spectrum Analyzer and probably analyze the Spectogram
+1. Open the file in Audacity or [Spectrum Analyzer](https://academo.org/demos/spectrum-analyzer/) and probably analyze the Spectogram
   1.1 Arrow next to the track name to switch from waveform (top) to logarithmic spectrogram (bottom).
   1.2 Morse code possible? As all the morse data appears to be below 100 Hz, we can use a low pass filter (effects menu, cutoff 100 Hz) to ease transcription
   1.3 Golang mp3 Frame Parser

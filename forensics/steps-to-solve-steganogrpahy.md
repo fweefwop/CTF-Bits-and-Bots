@@ -1,6 +1,18 @@
 ## Steganography
 originally from https://bitvijays.github.io/LFC-Forensics.html. added modification to tailor team ususage. 
 ### Images
+Download to install usual Stegnography tools: - ```frackerzip, Exiftool, Steghide, Outguess, Jsteg, Stegoveritas```        
+[steg-tools-install.sh](https://fweefwop.github.io/CTF%20Tools/steg-tools-install.shInstall)
+
+Usage:
+```
+chmod +x steg-tools-install.sh
+./steg-tools-install.sh
+```    
+Stegoveritas: This is an automated tool to detect hidden text and files. It usually is included in Kali.
+Install: ```  pip install stegoveritas```      
+Usage: ``` stegoveritas [file name]``` 
+
 If you are looking for hidden flag in an image first check with
 1. ```file, exiftool``` command, and make sure the extension is correctly displayed.
 2. ```strings```      

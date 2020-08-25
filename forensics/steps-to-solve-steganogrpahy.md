@@ -11,7 +11,7 @@ chmod +x steg-tools-install.sh
 ```    
 **Stegoveritas:** This is an automated tool to detect hidden text and files. It usually is included in Kali.      
 **Install:** ```  pip install stegoveritas```      
-**Usage: ** ``` stegoveritas [file name]``` 
+**Usage:** ``` stegoveritas [file name]``` 
 
 If you are looking for hidden flag in an image first start with ``` stegovertitas```. If nothing is found, run the following steps:
 1. ```file, exiftool``` command, and make sure the extension is correctly displayed.

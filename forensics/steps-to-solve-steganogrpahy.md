@@ -15,8 +15,8 @@ with 7z x . If somehow, you get a passphrase for the image, then you might have 
 6. ```stegosuite```
 7. ```steghide``` : If there’s any text present in the Image file or the filename of the image or any link ( maybe to youtube video; video name can be 
 the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.
-8. ```[zsteg](https://github.com/zed-0xff/zsteg)``` : detect stegano-hidden data in PNG & BMP
-9. ```[pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)``` : pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
+8. [zsteg](https://github.com/zed-0xff/zsteg): detect stegano-hidden data in PNG & BMP
+9. [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html): pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
 the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.
 10. ```Mediaextract``` : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.
 11. Comparing two similar images to find the difference

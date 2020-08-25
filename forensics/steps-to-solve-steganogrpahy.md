@@ -1,5 +1,5 @@
-##Steganography
-###Images
+## Steganography
+### Images
 If you are looking for hidden flag in an image first check with
 1. ```file, exiftool``` command, and make sure the extension is correctly displayed.
 2. ```strings``` 

@@ -11,7 +11,7 @@ If you are looking for hidden flag in an image first check with
 3. ```binwalk``` the file, just to make sure, there’s nothing extra stored in that image.
 4. ```hexdump -C``` and look for interesting pattern may be? If you get 7z or PK they represent Zipped files. If so, you can extract those file 
 with 7z x . If somehow, you get a passphrase for the image, then you might have to use ```steghide``` tool as it allows to hide data with a passphrase.
-5. ```stegsolve``` - check all the planes. There’s a data-extracter, we may try to extract all the values of RGB and see if there’s any flag in that.
+5. [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) - check all the planes. There’s a data-extracter, we may try to extract all the values of RGB and see if there’s any flag in that.
 6. ```stegosuite```
 7. ```steghide``` : If there’s any text present in the Image file or the filename of the image or any link ( maybe to youtube video; video name can be 
 the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.

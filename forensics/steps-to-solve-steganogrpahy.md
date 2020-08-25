@@ -3,7 +3,7 @@ originally from https://bitvijays.github.io/LFC-Forensics.html. added modificati
 ### Images
 If you are looking for hidden flag in an image first check with
 1. ```file, exiftool``` command, and make sure the extension is correctly displayed.
-2. ```strings``` 
+2. ```strings```      
   2.1 Sometimes, it is better to see lines only greater than x length.
   ``` 
     strings RainingBlood.mp3 | awk 'length($0)>20' | sort -u

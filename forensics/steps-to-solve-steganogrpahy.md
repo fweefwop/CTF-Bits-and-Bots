@@ -23,30 +23,30 @@ If you are looking for hidden flag in an image first start with ``` stegovertita
 3.1 ```binwalk``` the file, just to make sure, there’s nothing extra stored in that image.               
 3.2 ```scalpel``` the file, usually used on .bmp file.           
 4. ```hexdump -C``` and look for interesting pattern may be? If you get 7z or PK they represent Zipped files. If so, you can extract those file 
-with 7z x . If somehow, you get a passphrase for the image, then you might have to use ```steghide``` tool as it allows to hide data with a passphrase.
-5. [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) - check all the planes. There’s a data-extracter, we may try to extract all the values of RGB and see if there’s any flag in that.
-6. ```stegosuite```
+with 7z x . If somehow, you get a passphrase for the image, then you might have to use ```steghide``` tool as it allows to hide data with a passphrase.             
+5. [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) - check all the planes. There’s a data-extracter, we may try to extract all the values of RGB and see if there’s any flag in that.                         
+6. ```stegosuite```                            
 7. ```steghide``` : If there’s any text present in the Image file or the filename of the image or any link ( maybe to youtube video; video name can be 
-the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.
-8. [zsteg](https://github.com/zed-0xff/zsteg): detect stegano-hidden data in PNG & BMP
-9. [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html): pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing 
-the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.
-10. [Mediaextract](https://github.com/panzi/mediaextract) : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.
-11. Comparing two similar images to find the difference
+the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.                   
+8. [zsteg](https://github.com/zed-0xff/zsteg): detect stegano-hidden data in PNG & BMP                    
+9. [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html): pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing               
+the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.              
+10. [Mediaextract](https://github.com/panzi/mediaextract) : Extracts media files (AVI, Ogg, Wave, PNG, …) that are embedded within other files.            
+11. Comparing two similar images to find the difference                   
 ```        
     compare hint.png stego100.png -compose src diff.png
 ```
-12. [Image Arithmetic](http://homepages.inf.ed.ac.uk/rbf/HIPR2/arthops.htm) We can do image addition, subtraction, multiplication, division, blending, logical AND/NAND, logical OR/NOR, logical XOR/XNOR, Invert/ Logical NOT, Bitshift Operators.
-13. We can use [gmic](http://gmic.eu/) to perform XOR of the images.
+12. [Image Arithmetic](http://homepages.inf.ed.ac.uk/rbf/HIPR2/arthops.htm) We can do image addition, subtraction, multiplication, division, blending, logical AND/NAND, logical OR/NOR, logical XOR/XNOR, Invert/ Logical NOT, Bitshift Operators.                     
+13. We can use [gmic](http://gmic.eu/) to perform XOR of the images.                     
 ```
   gmic a.png b.png -blend xor -o result.png
 ```    
-14. JPEG : [Jstego](https://sourceforge.net/projects/jstego/) : program aims at providing a java solution to hide secret information(such as secret file) to JPEG images. Hiding algorithm contains 
-Jsteg and F5. The main(probably the toughest) stuff is encoding and decoding JFIF files.
+14. JPEG : [Jstego](https://sourceforge.net/projects/jstego/) : program aims at providing a java solution to hide secret information(such as secret file) to JPEG images. Hiding algorithm contains              
+Jsteg and F5. The main(probably the toughest) stuff is encoding and decoding JFIF files.                       
 15. JPEG : [Jsteg](https://github.com/lukechampine/jsteg) : jsteg is a package for hiding data inside jpeg files, a technique known as steganography. This is accomplished by copying each bit 
 of the data into the least-significant bits of the image. The amount of data that can be hidden depends on the filesize of the jpeg; it takes about 10-14 bytes 
-of jpeg to store each byte of the hidden data.
-16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)
+of jpeg to store each byte of the hidden data.                    
+16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)                
 
 ### LSB Stegonagraphy
 File are made of bytes. Each byte is composed of eight bits.

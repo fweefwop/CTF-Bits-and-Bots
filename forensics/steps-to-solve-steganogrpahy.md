@@ -46,8 +46,10 @@ Jsteg and F5. The main(probably the toughest) stuff is encoding and decoding JFI
 15. JPEG : [Jsteg](https://github.com/lukechampine/jsteg) : jsteg is a package for hiding data inside jpeg files, a technique known as steganography. This is accomplished by copying each bit 
 of the data into the least-significant bits of the image. The amount of data that can be hidden depends on the filesize of the jpeg; it takes about 10-14 bytes 
 of jpeg to store each byte of the hidden data.                    
-16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)                
-
+16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)  
+17. Modifying IHDR chunk to change the width or height of an image to reveal hidden portions of the photo where a flag might be hidden. https://www.w3.org/TR/PNG/#11IHDR. But the checksum would be wrong. Download ```pngcsum``` from http://schaik.com/png/pngcsum.html to fix the checksum, then
+view file.      
+    
 ### LSB Stegonagraphy
 File are made of bytes. Each byte is composed of eight bits.
 ```   

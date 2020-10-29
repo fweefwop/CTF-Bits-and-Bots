@@ -2,7 +2,11 @@
 
 ## Binary Exploration            
 
-[Python Template](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/template.py) to start with                    
+[Python Template](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/template.py) to start with  
+[GDB Commands](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/GDB.md)                           
+[Steps to Binary Exploration](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/Useful%20Tools.md)               
+[Use GDB/Gef to find buffer overflow offset](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/how-to-use-pwntools/find%20buffer%20overflow%20offset.md)                    
+[Use GDB to find right libc](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/binary%20exploitation/how-to-use-pwntools/use%20gdb%20to%20find%20right%20libc.md)            
 
 ## Stegnograph           
 

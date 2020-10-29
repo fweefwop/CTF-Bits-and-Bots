@@ -14,4 +14,6 @@
 
 ## Web            
 
-Start with [Nikto](https://github.com/fweefwop/CTF-Bits-and-Bots/tree/master/web)                      
+Start with [Nikto](https://github.com/fweefwop/CTF-Bits-and-Bots/tree/master/web)                   
+[Lookup software stacks behind a site](https://www.wappalyzer.com)                  
+

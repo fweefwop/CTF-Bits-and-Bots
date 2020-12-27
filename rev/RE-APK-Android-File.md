@@ -4,9 +4,9 @@
 
 ### Install APKTool, d2j-dex2jar and JD-Gui
 refer to below links for installations:               
-[APKTool] to unwrapping the package(https://ibotpeaches.github.io/Apktool/install/)                              
-[d2j-dex2jar] to convert unwrapped .dex file to .jar file(https://installlion.com/kali/kali/main/d/dex2jar/install/index.html)                
-[JDGui] to decompile and view the java source code(http://java-decompiler.github.io/)                    
+[APKTool](https://ibotpeaches.github.io/Apktool/install/)  to unwrapping the package                              
+[d2j-dex2jar](https://installlion.com/kali/kali/main/d/dex2jar/install/index.html) to convert unwrapped .dex file to .jar file                
+[JDGui](http://java-decompiler.github.io/) to decompile and view the java source code                  
 
 ### Steps to RE
 1. ```apktool d -s sample.apk```   - this will give you a ```.dex``` file.

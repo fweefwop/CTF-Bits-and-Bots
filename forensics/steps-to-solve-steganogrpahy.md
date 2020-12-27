@@ -2,7 +2,7 @@
 originally from https://bitvijays.github.io/LFC-Forensics.html. Added modification to tailor team usage. 
 ### Images
 Download to install common Stegnography tools: - ```frackerzip, Exiftool, Steghide, Outguess, Jsteg, Stegoveritas```          
-[steg-tools-install.sh](https://fweefwop.github.io/CTF%20Tools/steg-tools-install.shInstall)
+[steg-tools-install.sh](https://github.com/fweefwop/CTF-Bits-and-Bots/blob/master/forensics/steg-tools-install.sh)
 
 **Usage:**
 ```

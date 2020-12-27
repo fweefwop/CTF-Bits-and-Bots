@@ -27,7 +27,8 @@ with 7z x . If somehow, you get a passphrase for the image, then you might have 
 5. [stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve) - check all the planes. There’s a data-extracter, we may try to extract all the values of RGB and see if there’s any flag in that.                         
 6. ```stegosuite```                            
 7. ```steghide``` : If there’s any text present in the Image file or the filename of the image or any link ( maybe to youtube video; video name can be 
-the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.                   
+the password ) that can be a passphrase to steghide. Sometimes, you may have to try all lowercase/ uppercase combinations.  
+``` steghide extract -sf example.jpg``` will extract file from example.jpg. It will ask from passphase, but sometimes even just press enter would extract for you!           
 8. [zsteg](https://github.com/zed-0xff/zsteg): detect stegano-hidden data in PNG & BMP                    
 9. [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html): pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing               
 the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form.              

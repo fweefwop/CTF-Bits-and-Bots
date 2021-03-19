@@ -49,7 +49,8 @@ of the data into the least-significant bits of the image. The amount of data tha
 of jpeg to store each byte of the hidden data.                    
 16. [Repair Corrupted JPEG/JPG, GIF, TIFF, BMP, PNG or RAW Image](https://online.officerecovery.com/pixrecovery/)  
 17. Modifying IHDR chunk to change the width or height of an image to reveal hidden portions of the photo where a flag might be hidden. https://www.w3.org/TR/PNG/#11IHDR. But the checksum would be wrong. Download ```pngcsum``` from http://schaik.com/png/pngcsum.html to fix the checksum, then
-view file.      
+view file.
+18. [Forensically](https://29a.ch/photo-forensics/#forensic-magnifier)
     
 ### LSB Stegonagraphy
 File are made of bytes. Each byte is composed of eight bits.

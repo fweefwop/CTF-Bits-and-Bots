@@ -51,6 +51,7 @@ of jpeg to store each byte of the hidden data.
 17. Modifying IHDR chunk to change the width or height of an image to reveal hidden portions of the photo where a flag might be hidden. https://www.w3.org/TR/PNG/#11IHDR. But the checksum would be wrong. Download ```pngcsum``` from http://schaik.com/png/pngcsum.html to fix the checksum, then
 view file.
 18. [Forensically](https://29a.ch/photo-forensics/#forensic-magnifier)
+19. JPEG: [stegcracker](https://github.com/Paradoxis/StegCracker): stegcracker can be used to brute force to uncover hidden data inside files.
     
 ### LSB Stegonagraphy
 File are made of bytes. Each byte is composed of eight bits.

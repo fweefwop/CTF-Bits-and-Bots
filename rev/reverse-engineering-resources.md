@@ -15,5 +15,10 @@ Modern.ie for FREE Win10 VM
 FLARE setup (includes GHidra):  https://www.fireeye.com/blog/threat-research/2018/11/flare-vm-update.html      
 Options: Volatility, CheatEngine(min install), mimikatz        
 
+### Progressing through levels of RE
+Start with static analysis: strings and floss     
+Progress to IDA/Ghidra for disassembly/decompiling      
+Move to Dynamic analysis (debuggers, changing values in memory, changing program flow, rewriting code in memory) - or combine to patch the executable     
+Behavioral analysis with ProcMon, ProcessHacker, RegShot, ProcDot     
 
 
